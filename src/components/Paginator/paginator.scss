@@ -1,0 +1,17 @@
+.pages {
+  display: flex;
+  justify-content: center;
+
+  .page {
+    padding: 3px;
+    margin: 0 3px;
+  }
+
+  .page__current {
+    border-bottom: 2px solid #e68134;
+  }
+
+  .page__next {
+    cursor: pointer;
+  }
+}

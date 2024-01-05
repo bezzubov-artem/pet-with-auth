@@ -1,0 +1,73 @@
+.header {
+  border-bottom: 1px solid #e68134;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 36px;
+}
+
+.user {
+  display: flex;
+  justify-content: flex-end;
+
+  .email {
+    color: #e68134;
+  }
+
+  input {
+    display: block;
+    box-sizing: border-box;
+    height: 36px;
+    border-radius: 18px;
+    padding: 5px 10px 5px 20px;
+    border: 1px solid #cfcfcf;
+    outline: none !important;
+
+    &:focus {
+      border-color: #e68134;
+    }
+  }
+
+  .logout {
+    cursor: pointer;
+    margin-left: 24px;
+  }
+
+  .logo {
+    height: 38px;
+  }
+
+  .layout {
+    padding: 0 36px;
+  }
+
+  button {
+    border: none;
+    outline: none !important;
+    background-color: #e68134;
+    color: #fff;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: 0.2s background-color, 0.2s color;
+    cursor: pointer;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    min-height: 36px;
+
+    &:hover {
+      background-color: #d45f07;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+    }
+
+    &:hover:disabled {
+      background-color: #e68134;
+      cursor: auto;
+    }
+  }
+
+}
